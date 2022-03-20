@@ -1,0 +1,349 @@
+.modal {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.modal .active {
+    opacity: 1;
+    pointer-events:all;
+   
+}
+
+.form-record {
+    width: 700px;
+    min-width: 400px;
+    background-color: #fff;
+    // border: 2px solid;
+    // border-color: #0d2b5e;
+    border-radius: 5px;    
+    box-shadow: 0 0 10px #000000;
+    border: 5px solid;
+    border-color:#fff;
+    
+    
+    // p {
+    //     color: black;
+    // }    
+}
+
+
+
+.form-selected {
+    display: none;
+}
+
+.form-selected.active {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.3vw;
+    width: auto;
+    height: auto;
+    background-color:  #fff;
+    
+    // p {
+    //     // color: black;
+    //     font-size: 11px;
+    //     margin: 6.4px 0;
+    // }
+}
+
+.clinic-selected {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.3vw;
+}
+
+.doctors-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 1.3vw;
+}
+
+.doctor-selected {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.doctor-card {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.doctor-card.active {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.doctor {
+    color: 20px;
+}
+
+.photo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    } 
+}
+
+.date-info {
+    padding-bottom: 1.3vw;
+}
+
+.timeBlock-info {
+    padding: 1.3vw 0 ;
+}
+
+.calendar {
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 1.3vw;
+
+    .header-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-size: small;
+        color: #2155AD;
+        background-color: white;
+        border-bottom: 1px solid;
+        border-color: #d7d7d7;
+
+        p {
+            margin: 10px;
+        }
+
+    }
+
+    table {
+        width: 100%;
+
+        font-size: small;
+        color: #2155AD;
+
+    }
+
+    tr {
+        text-align: center;
+    }
+
+    td {
+        height: 5vh;
+        transition: 0.5s;
+    }
+    td:hover {
+        background-color:#CED7E7;
+    }
+
+    .active-days{
+        background-color: #77dd77;
+    }
+
+    .selected-active-days{
+        background-color: #77dd77;
+        border: 1px solid;
+    }
+
+
+}
+
+.block-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.info-elem-1 {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.info-elem-2 {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+
+.info-elem-3 {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}
+
+.info-text {
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+.time-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.time-block {
+    width: max-content;
+    border-radius: 5px;
+    border: 0.1px solid;
+    background: #aae6aa;
+    border-color: cadetblue;
+    box-shadow: 0 0 10px #8b8686;    
+    padding: 0.7vw;
+    margin: 0.7vw;
+
+    cursor: pointer;
+    p {
+        font-size: medium;
+        color: #000000;
+    }
+}
+
+.move-menu {
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+
+    .move-start {
+        cursor: pointer;
+    }
+
+    .move-none {
+        color: rgb(105, 97, 97);
+        cursor:default;
+    }
+}
+
+.noActiv {
+    width: max-content;
+    border-radius: 5px; 
+    background: rgb(227, 178, 178);
+
+    box-shadow: 0 0 3px #000000;    
+    padding: 0.7vw;
+    margin: 0.7vw;
+
+    cursor: pointer;
+    p {
+        all: none;
+        font-size: medium;
+        color: #000;
+    }
+}
+
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1.3vw;
+}
+
+.service-check {
+    margin-right: 5px;
+}
+
+.form-title {
+    color: black;
+    text-align: center;
+}
+
+.step {
+    border-bottom: 2px solid #2155AD;
+}
+
+.title-step {
+    color:#000;
+    margin: 0;
+    padding: 0.4rem;
+    background-color:#fff;
+}
+
+
+.back-line {
+    height: auto;
+    width: 3%;
+}
+
+.dop-title {
+    color: #7e7e7e;
+}
+
+select {
+    width: 100%;
+    box-shadow: 0 0 1px #000;
+    outline: none;
+}
+
+option {
+    font-size: small;
+    color: black;
+
+}
+
+option:hover
+{
+  background: rgb(3, 140, 232);
+  color: #fff;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+        margin: 0.2rem;
+    }
+}
+
+.button-modal{
+    margin-top: 0.4rem;
+    pointer-events: auto;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+
+
+}
+
+.and-info{
+    margin: 1vw;
+}

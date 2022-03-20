@@ -1,0 +1,114 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+
+    padding: 1rem;
+
+}
+
+.title-visit {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+.card-visit {
+    margin: 0 1rem;
+
+    background-color: #f0f0f0;
+    border: 1px solid;
+    border-color: #cec3c3;
+}
+
+.title-visit {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 0;
+
+}
+
+.card {
+    width: max-content;
+    min-height: 13rem;
+    margin: 1rem;
+    padding: 1rem;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    
+    button {
+        margin-top: 0.4rem;
+    
+        pointer-events: auto;
+    
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+    }
+
+}
+
+p {
+    margin: 0.4rem;
+}
+
+.payment-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-fallse {
+    color: red;
+}
+
+.text-try {
+    color: green;
+}
+
+.card-noef {
+    pointer-events: none;
+}
+
+.card-date {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-top: 0.4rem;
+    pointer-events: auto;
+
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.time-visit {
+    margin-left: 0.4rem;
+}
+
+.add-visit {
+    margin:  auto;   
+    margin-bottom: 1rem;
+}
+
+.rating {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.selected-stars {
+    color: green;
+}
